@@ -27,6 +27,11 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             //put your multiplatform dependencies here
+            implementation(projects.multiplatformBasiSharedcApp)
+            implementation(libs.compose.ui)
+            implementation(libs.compose.ui.tooling.preview)
+            implementation(libs.compose.material3)
+            implementation(libs.androidx.activity.compose)
             implementation(libs.kotlin.serialization.json)
         }
         commonTest.dependencies {
